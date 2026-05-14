@@ -101,3 +101,18 @@ document.getElementById('checkout-form').addEventListener('submit', function (e)
     document.getElementById('checkout-form').dispatchEvent(new Event('checkout:valid'));
   }
 });
+
+// Show success screen when validation passes
+document.getElementById('checkout-form').addEventListener('checkout:valid', function () {
+  document.getElementById('checkout-form').hidden = true;
+  document.getElementById('checkout-success').hidden = false;
+});
+
+// Reset back to the form
+document.getElementById('checkout-restart').addEventListener('click', function () {
+  document.getElementById('checkout-form').reset();
+  document.querySelectorAll('.field-error').forEach(el => el.remove());
+  document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
+  document.getElementById('checkout-success').hidden = true;
+  document.getElementById('checkout-form').hidden = false;
+});
