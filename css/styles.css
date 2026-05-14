@@ -63,3 +63,14 @@ input:focus {
 #checkout-btn:hover {
   background: #574fd6;
 }
+
+input.input-error {
+  border-color: #e53e3e;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.15);
+}
+
+.field-error {
+  font-size: 0.78rem;
+  color: #e53e3e;
+  margin-top: 2px;
+}
