@@ -1,0 +1,17 @@
+/* artist-profiles.css */
+
+.artist-profile {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.artist-profile h2 {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.artist-profile p {
+    color: #555;
+    line-height: 1.6;
+}
