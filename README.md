@@ -5,3 +5,4 @@ A demo website for music enthusiasts and artists.
 - Artist profile pages
 - Playlist sharing
 - Offline listening mode
+- Collaborative playlists
