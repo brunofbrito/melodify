@@ -6,6 +6,7 @@
     <title>Artists – Melodify</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/artist-profiles.css">
+    <link rel="stylesheet" href="css/sleep-timer.css">
 </head>
 <body>
     <header>
@@ -16,9 +17,19 @@
             <h2>Featured Artist</h2>
             <p>Discover the artists behind your favorite tracks.</p>
         </section>
+        <div class="sleep-timer" id="sleep-timer" role="group" aria-label="Sleep timer">
+            <span>Sleep timer:</span>
+            <button type="button" class="sleep-timer__preset" data-minutes="15" aria-pressed="false">15m</button>
+            <button type="button" class="sleep-timer__preset" data-minutes="30" aria-pressed="false">30m</button>
+            <button type="button" class="sleep-timer__preset" data-minutes="45" aria-pressed="false">45m</button>
+            <button type="button" class="sleep-timer__preset" data-minutes="60" aria-pressed="false">60m</button>
+            <span class="sleep-timer__remaining" id="sleep-timer-remaining" hidden></span>
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 melodify_website</p>
     </footer>
+    <script src="js/sleep-timer.js"></script>
+    <script src="js/sleep-timer-ui.js"></script>
 </body>
 </html>

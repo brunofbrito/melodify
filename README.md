@@ -6,3 +6,4 @@ A demo website for music enthusiasts and artists.
 - Playlist sharing
 - Offline listening mode
 - Collaborative playlists
+- Sleep timer
